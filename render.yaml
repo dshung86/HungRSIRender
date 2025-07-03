@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: HungRSIBot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        value: 7636385903:AAEZRp1JmFVRACtvpiYWp29BJpLdw9Cpgao
